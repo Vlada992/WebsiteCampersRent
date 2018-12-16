@@ -1,0 +1,277 @@
+body .logo {
+	width: 220px;
+}
+#contentwrapper {
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+}
+#contentwrapper {
+	max-width: 1210px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	background-color: rgba(0,0,0,0.1);
+}
+
+#fix-wrapper {
+	left: auto;
+}
+
+@media only screen and (max-width: 1280px) {
+	#contentwrapper {
+		max-width: 1100px;
+	}
+}
+body {
+	-webkit-background-size: cover!important;
+	-moz-background-size: cover!important;
+	background-size: cover!important;
+	background-attachment: fixed!important;
+	background-position: center top!important;
+}
+#header .mod_socials {
+	display: none;
+}
+
+.mainmenu {
+	width: 100%;
+	margin-left: 0;
+}
+
+.mainmenu ul {
+	text-align: right;
+}
+body .mainmenu ul li a.trail,
+body .mainmenu ul li a.active {
+	background: rgba(0,0,0,0.05);
+}
+
+body .mainmenu ul li:hover:after,
+body .mainmenu ul li.active:after,
+body .mainmenu ul li.trail:after {
+	display: none;
+}
+@media only screen and (max-width: 767px) {
+body .logo {
+	width: 160px !important;
+}
+}
+@media only screen and (max-width: 767px) {
+body .logo {
+	height: 80px;
+}
+}
+body .logo {
+	height: 110px;
+}
+
+/* Hier alles fÃ¼r die Akzentfarbe */
+
+.bg-accent {
+	background-color: #1d9c35;
+}
+
+p a {
+	color: #1d9c35;
+}
+
+.subnav a {
+	color: #1d9c35;
+}
+
+#nav-open-btn:before {
+	background: #1d9c35;
+}
+
+.ce_table table th {
+	background: #1d9c35;
+}
+
+blockquote a {
+	color: #1d9c35;
+}
+
+.ce_accordion .toggler:before {
+  color:#1d9c35;
+}
+
+.mod_calendar th.head {
+  background:#1d9c35;
+  border-top:1px solid #1d9c35;
+  border-right:1px solid #1d9c35;
+  border-left:1px solid #1d9c35;
+}
+
+.mod_calendar th.previous a,
+.mod_calendar th.next a {
+  background-color:#1d9c35;
+}
+
+.pagination li span.current {
+	background: #1d9c35;
+}
+
+.pagination li a:hover {
+	color: #1d9c35;
+}
+
+.mod_faqpage h3:before {
+	color: #1d9c35;
+}
+
+.mod_search .submit {
+	border: 1px solid #1d9c35;
+}
+
+input:focus,
+textarea:focus {
+  border:1px solid #1d9c35;
+}
+
+form fieldset legend {
+  background-color:#1d9c35;
+}
+
+input.submit[type="submit"] {
+	background: #1d9c35;
+}
+
+input.submit[type="submit"]:hover {
+	background: #1d9c35;
+}
+
+.label-accent {
+	background: #1d9c35;
+}
+
+.ce_hyperlink a.link-white,
+a.btn.link-white {
+	color: #1d9c35;
+}
+
+.ce_hyperlink a.link-white:hover,
+a.btn.link-white:hover {
+	background: #1d9c35;
+}
+
+.newslist h2,
+.newslist h2 a {
+	color: #1d9c35;
+}
+
+.newslist .news-left .news-date {
+	background: #1d9c35;
+}
+
+.color-accent,
+.color-accent p,
+.color-accent i,
+.color-accent h1,
+.color-accent h2,
+.color-accent h3,
+.color-accent h4,
+.color-accent h5,
+.color-accent h6,
+.color-accent a:not(.link-white) {
+	color: #1d9c35;
+}
+
+blockquote {
+	border-color: #1d9c35;
+}
+
+.ce_gallery .content {
+	background: #1d9c35;
+}
+
+.newslist-v3 .date {
+	background: #1d9c35;
+}
+
+.newsteaser_v3 .news-overlay i {
+	background-color: #1d9c35;
+}
+
+.newslist-v3 .subheadline {
+	color: #1d9c35;
+}
+
+.mainmenu ul ul li a:hover,
+.mainmenu ul ul li a.trail,
+.mainmenu ul ul li a.active {
+	color: #1d9c35 !important;
+}
+
+body #header .mainmenu ul li ul li a:hover {
+	color: #1d9c35;
+}
+
+.mainmenu ul li a.trail,
+.mainmenu ul li a.active {
+	/*color: #1d9c35;*/
+color: #fff;
+}
+
+.mod_portfoliolist .item a:hover {
+	color: #1d9c35;
+}
+
+.themesetting_email a:hover {
+	color: #1d9c35;
+}
+
+.mainmenu ul li:hover:after,
+.mainmenu ul li.active:after,
+.mainmenu ul li.trail:after {
+	background: #1d9c35;
+}
+
+.ce_revolutionslider_text {
+	background: #1d9c35;
+}
+
+.ce_hyperlink a,
+a.btn,
+.ce_hyperlink a:hover,
+a.btn:hover {
+	background: #1d9c35;
+	border-color: #1d9c35;
+}
+
+.ce_hyperlink a.outline,
+a.btn.outline {
+	color: #1d9c35;
+}
+
+.ce_hyperlink a.outline:hover,
+a.btn.outline:hover {
+	background: #1d9c35;
+	border-color: #1d9c35;
+}
+
+.ce_hyperlink a.link-white.outline:hover,
+a.btn.link-white.outline:hover {
+	color: #1d9c35;
+}
+
+.ce_iconbox .headline {
+	color: #1d9c35!important;
+}
+
+.ce_text_image_bar h1,
+.ce_text_image_bar h2,
+.ce_text_image_bar h3,
+.ce_text_image_bar h4,
+.ce_text_image_bar h5,
+.ce_text_image_bar h6 {
+	color: #1d9c35;
+}
+
+.newsteaser .date {
+	background: #1d9c35;
+}
+
+.bg-second-color {
+	background-color: #1d9c35;
+}
