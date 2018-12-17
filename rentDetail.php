@@ -23,7 +23,7 @@ require_once('includes/header2.php');
         <div class='container'>
             <div class='row'>
                 <div class='col-lg-12'>
-                    <h1 id='rentHead' style="text-align:center; margin-top: 100px;">Vermietung<br>Reservierungsanfrage</h1><br>
+                    <h2 id='rentHead' style="text-align:center; margin-top: 100px;">Vermietung<br>Reservierungsanfrage</h2><br>
                 </div>
             </div>
         </div>

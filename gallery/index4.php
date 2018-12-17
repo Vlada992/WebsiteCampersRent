@@ -6,7 +6,7 @@ require_once('../includes/head3.php');
 include_once('../includes/header3.php');
 ?>
 
-  <article class='gallery'>
+  <article class='gallery' id="padd50">
   
   <a class='gallery-link' href='../images04/fourth1.JPG'>
     <figure class='gallery-image'>

@@ -1,7 +1,18 @@
 <?php
+
+// $GLOBALS['config'] = array(
+// "db" => array("host" => "localhost", "user" => "xchqpj4m17", "password" => "BV9EeugS", "dbname" => "ihukyqba0"),
+// "url" => "http://fernweh-wohnmobilvermietung.de/",
+// "status" => true,
+// "app_dir" => "C:/wamp64/www/exhibit",
+// );
+
+
+
 $GLOBALS['config'] = array(
-"db" => array("host" => "localhost", "user" => "xchqpj4m17", "password" => "BV9EeugS", "dbname" => "ihukyqba0"),
+"db" => array("host" => "localhost", "user" => "root", "password" => "", "dbname" => "exhibit"),
 "url" => "http://fernweh-wohnmobilvermietung.de/",
 "status" => true,
 "app_dir" => "C:/wamp64/www/exhibit",
 );
+?>

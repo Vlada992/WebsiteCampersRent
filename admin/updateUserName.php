@@ -10,6 +10,7 @@ $userId = strip_tags($userId);
 <html lang="de">
 
 <head>
+    <meta charset="utf-8">
     <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
@@ -23,11 +24,11 @@ $userId = strip_tags($userId);
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-    <link rel="./manifest" href="./manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,17 +47,17 @@ $userId = strip_tags($userId);
    
    <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark bgDarkNew">
-            <a id='indId1' class="navbar-brand rounded" href="../index.php"><img id='stajlLogo1' style='display:none;width:205px;height:70px' src='../images/menuMenuLogo1.png' />
-                <img style='width:205px;height:70px' id='stajlLogo' src='../images/logo_menu.png' class="rounded">
+            <a id='indId1' class="navbar-brand rounded" href="../index.php"><img id='stajlLogo1' style='display:none;width:205px;height:70px' src='../images/menuMenuLogo1.png' alt="Fernweh" />
+                <img style='width:205px;height:70px' id='stajlLogo' src='../images/logo_menu.png' class="rounded" alt="Fernweh"></a>
                 <!--logo text-->
                 <h6 class='logoTxt'>
-                    <img style='margin-top:-2%;' src='../images/old-typical-phoneLogo1.png' />
-                    <a style='color:#999999!important' href='tel:49 151 58166222'>+49 151 58166222</a><br><br>
-                    <img style='margin-top:-2%;' src='../images/openedMailLogo1.png' />
+                    <img style='margin-top:-2%;' src='../images/old-typical-phoneLogo1.png' alt="Fernweh"/>
+                    <a style='color:#999999!important' href='tel:4915158166222'>+49 151 58166222</a><br><br>
+                    <img style='margin-top:-2%;' src='../images/openedMailLogo1.png' alt="Fernweh" />
                     &nbsp;&nbsp;<a style='color:#999999!important' href="mailto:info@fernweh-wohnmobil.de">info@fernweh-wohnmobil.de</a>
                 </h6>
                 <!--logo text-->
-            </a>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <!--<span class="navbar-toggler-icon"></span>-->
@@ -88,26 +89,26 @@ $userId = strip_tags($userId);
         </nav>
     </header>
 
-    <div class="container-fluid">
-        <div class="row" style="margin-top: 20px;">
+<div class="container-fluid" style="margin: 0px;">
+    <div class="row">
 
-            <main  class='adminIndex' role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
+        <main  class='adminIndex'  class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
                 <!-- Početak Nebojšinog koda -->
+            <div class='adminIndclass' style='background-color:hsl(0,0%,88%)' id="logout">
+                <?php
+                if(isset($_SESSION['user_id'], $_SESSION['userName'])){
+                echo "<br><h3 style='font-size:2rem;padding:3%; display:inline;' class='adminH3'>Hallo " . $_SESSION['userName'] . "!</h3>";
+                ?>
+                <form class='pull-right btn btn-danger' action="logout.php" method="post" style="margin: 3%;">
+                    <input  class='btn btn-danger'  type="submit" name="logout" value="Ausloggen">
+                </form>
+                <div class='col-lg-12 col-md-12 col-sm-12' style="clear: both;">  <!-- div class col-4 col-4 col-4 col-4 -->
 
-<div class='adminIndclass' style='background-color:hsl(0,0%,88%)' id="logout">
-<?php
-if(isset($_SESSION['user_id'], $_SESSION['userName'])){
-echo "<br><h3 style='font-size:2rem;padding:2%'  class='adminH3'>Hallo " . $_SESSION['userName'] . "!</h3>";
-?>
-<div class='col-lg-12 col-md-12 col-sm-12'>  <!-- div class col-4 col-4 col-4 col-4 -->
-<form class='pull-right btn btn-danger' action="logout.php" method="post">
-<input  class='pull-right btn btn-danger'  type="submit" name="logout" value="Ausloggen">
-</form>
-</div> <!-- col-md-4 -->
-<?php
-}
-?>
-</div>
+                </div> <!-- col-md-4 -->
+                <?php
+                }
+                ?>
+            </div>
 <?php
 if(isset($_SESSION['user_id'])){
 ?>
@@ -120,7 +121,7 @@ echo "<p>" . $_SESSION['success'] . "</p>";
 unset($_SESSION['success']);
 }
 if(isset($_SESSION['errors'])){
-echo "</ul>";
+echo "<ul>";
 foreach($_SESSION['errors'] as $error){
 echo "<li>" . $error . "</li>";
 }
@@ -142,13 +143,14 @@ unset($_SESSION['errors']);
 include_once "inc/widgets/loginForm.php";
 }
 ?>
+</div>
 
                 <!-- kraj Nebojšinog koda -->
             </main>
 
         </div>
         <!--row-->
-    </div>
+    </div></b>
     <!--container-fluid-->
 
 

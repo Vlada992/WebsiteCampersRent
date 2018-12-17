@@ -6,7 +6,7 @@ include_once('../includes/head3.php');
 include_once('../includes/header3.php');
 ?>
 
-  <article class='gallery' id="padd100">
+  <article class='gallery' id="padd50">
   <a class='gallery-link' href='../images02/second2.jpg'>
     <figure class='gallery-image'>
       <img height='1400' src='../images02/second2.jpg' width='1000'>

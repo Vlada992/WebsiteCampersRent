@@ -84,7 +84,7 @@ require_once "core/init.php";
 
 
     <div class="container-fluid">
-        <div class="row" style="margin-top: 20px;">
+        <div class="row">
             <main  class='adminIndex' role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
         
         
@@ -92,11 +92,11 @@ require_once "core/init.php";
 <!--<div class='container'>  -->      <!-- container -->  
 <!--<div class='row'>   -->     <!-- row -->  
 
-<div class='adminIndclass row' style='background-color:hsl(0,0%,88%); margin-top: 20px;' id="logout">
+<div class='adminIndclass row' style='background-color:hsl(0,0%,88%);' id="logout">
 <div class='col-lg-12 col-md-12 col-sm-12'>
 <?php
 if(isset($_SESSION['user_id'], $_SESSION['userName'])){
-echo "<h3 class='adminH3' style='font-size:2rem;padding:2%'>&nbsp;&nbsp;Hallo " . $_SESSION['userName'] . "!</h3>";
+echo "<br><h3 class='adminH3' style='font-size:2rem;padding:2%; display:inline;'>&nbsp;&nbsp;Hallo " . $_SESSION['userName'] . "!</h3>";
 ?>
 <!--<div class='col-lg-3 col-md-3 col-sm-3'> --> <!-- div col 3 3 3 3 3 -->
 <form  action="logout.php" method="post" class="pull-right btn btn-danger">
@@ -106,7 +106,7 @@ echo "<h3 class='adminH3' style='font-size:2rem;padding:2%'>&nbsp;&nbsp;Hallo " 
 
 
 <div class='col-lg-4 col-md-4 col-sm-4'>  <!-- div col 3 3 3 3 3 -->
-<h2  class='adminH3' style='margin-bottom:0.5%;margin-top:3%;'>Administration</h2><br>
+<h2  class='adminH3' style='margin-bottom:0.5%;margin-top:3%;'>&nbsp;&nbsp;&nbsp; Administration</h2><br>
 <button class='btn btn-success bnt-lg' style="display: block; margin:auto;"><a style='text-decoration:none;color:#fff'  href="reservations.php" class="btn btn-success btn-lg">Reservierungen verwalten</a></button><br>
 </div> <!-- col-md-3 3 3 3 3 -->
 

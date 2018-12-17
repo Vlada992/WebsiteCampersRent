@@ -87,24 +87,27 @@ $userId = strip_tags($userId);
 
 
 
-    <div class="container-fluid">
-        <div class="row">
+<div class="container-fluid" style="margin: 0px;">
+    <div class="row">
 
-            <main  class='adminIndex'  class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
+        <main  class='adminIndex'  class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
                 <!-- Početak Nebojšinog koda -->
-<div class='adminIndclass' style='background-color:hsl(0,0%,88%)' id="logout">
-<?php
-if(isset($_SESSION['user_id'], $_SESSION['userName'])){
-echo "<br><h3 class='adminH3'>Hallo " . $_SESSION['userName'] . "!</h3>";
-?>
-<form class='pull-right btn btn-danger' action="logout.php" method="post">
-<input  class='pull-right btn btn-danger'  type="submit" name="logout" value="Ausloggen">
-</form>
-<?php
-}
-?>
-</div>
+            <div class='adminIndclass' style='background-color:hsl(0,0%,88%)' id="logout">
                 <?php
+                if(isset($_SESSION['user_id'], $_SESSION['userName'])){
+                echo "<br><h3 style='font-size:2rem;padding:3%; display:inline;' class='adminH3'>Hallo " . $_SESSION['userName'] . "!</h3>";
+                ?>
+                <form class='pull-right btn btn-danger' action="logout.php" method="post" style="margin: 3%;">
+                    <input  class='btn btn-danger'  type="submit" name="logout" value="Ausloggen">
+                </form>
+                <div class='col-lg-12 col-md-12 col-sm-12' style="clear: both;">  <!-- div class col-4 col-4 col-4 col-4 -->
+
+                </div> <!-- col-md-4 -->
+                <?php
+                }
+                ?>
+            </div>
+<?php
 if(isset($_SESSION['user_id'])){
 ?>
 <h2 class='adminH3' style='margin-top:4%;margin-bottom:3%'>Passwort erneuern</h2>

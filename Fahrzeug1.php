@@ -110,7 +110,7 @@ require_once('includes/header2.php');
                 <div id="autogrid_wrapper_5661" class="autogrid_wrapper cte block">
                     <div class="inner">
                         <h2 class="ce_headline first" id="ueberschrift-fahrzeuge-pg33">
-                            <a  id='mietenAFahr' href='./rentDetail.php?vehId=1'>Mietenfragen senden&nbsp;<span> <i id='envelId1Fahr'
+                            <a  id='mietenAFahr' href='./rentDetail.php?vehId=1'>Reservierungsanfrage senden&nbsp;<span> <i id='envelId1Fahr'
                                     style='display:none' class="fas fa-envelope-open"></i><i id='envelId2Fahr'
                                     class="fas fa-envelope"></i></span>
                             </a>

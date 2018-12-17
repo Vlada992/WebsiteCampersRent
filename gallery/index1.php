@@ -7,7 +7,7 @@ include_once('../includes/header3.php');
 ?>
 <!-- THIS ARE TEXT IMAGES FROM ANOTHER VEHICLES NOT FINISHED NOT FINISHED NOT FINISHED *************** -->
 
-  <article class='gallery'>
+  <article class='gallery' id="padd50">
   <a class='gallery-link' href='../images6/6aNEWEST.jpg'>
     <figure class='gallery-image'>
       <img height='1400' src='../images6/6aNEWEST.jpg' width='1000'>
