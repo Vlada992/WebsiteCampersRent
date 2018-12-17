@@ -29,13 +29,13 @@
                     </div>
                     <div class="ce_image autogrid-id_5650 autogrid-type_cte n0 one_half autogrid block">
                         <figure class="image_container img2Fig">
-                            <img src="files/data/gfx/fahrzeuge/symbole/teilintegriertes-wohnmobil.jpg" width="800"
+                            <img src="files/data/gfx/fahrzeuge/symbole/vollintegriertes-wohnmobil.jpg" width="800"
                                 height="296" alt="Vollintegriertes Wohnmobil" title="Vollintegriertes Wohnmobil">
                         </figure>
                     </div>
                     <div class="ce_image autogrid-id_5651 autogrid-type_cte n0 one_half autogrid block">
                         <figure class="image_container img2Fig">
-                            <img src="files/data/gfx/fahrzeuge/symbole/3_personen.jpg" width="800" height="296" alt="maximal 4 Personen"
+                            <img src="files/data/gfx/fahrzeuge/symbole/4_personen.jpg" width="800" height="296" alt="maximal 4 Personen"
                                 title="maximal 4 Personen">
                         </figure>
                     </div>
@@ -97,7 +97,7 @@
                                     <td class="col_2 col22 colCent"> 294 cm </td>
                                     <td class="col_2 col22 colCent">3499 kg<br> (Zul. Gesamtmasse)</td>
                                     <td class="col_2 col22 colCent">4</td>
-                                    <td class="col_2 col33 colCent">3</td>
+                                    <td class="col_2 col33 colCent">4</td>
                                 </tr>
                             </tbody>
                         </table>

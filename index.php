@@ -207,7 +207,7 @@ require_once('includes/header.php');
       <h1 class='EachHeadTxt'>Klasse 3<br> Teilintegriert Kompakt </h1>
       <h4>Z.B. Dethleffs Globebus T6</h4>
       <p>Sitzplätze: 4</p>
-      <p>Schlafplätze: 3</p>
+      <p>Schlafplätze: 2 (3)</p>
       <p>Gewicht: 3499 kg</p><br>
       <a title='Details zu diesem Fahrzeug anzeigen' href='./Fahrzeug3.php' class='detailIdA'>Details &nbsp;&nbsp;   <img src='./images/diagonala11.png' alt='img'/></a>
       </div>
@@ -249,7 +249,7 @@ require_once('includes/header.php');
           <h1 class='EachHeadTxt'>Klasse 6<br> Vollintegriert Kompakt</h1>
           <h4>Z.B. Dethleffs Globebus I6</h4>
           <p>Sitzplätze: 4</p>
-          <p>Schlafplätze: 3</p>
+          <p>Schlafplätze: 4</p>
           <p>Gewicht: 3499 kg</p><br>
           <a title='Details zu diesem Fahrzeug anzeigen' href='./Fahrzeug6.php' class='detailIdA'>Details &nbsp;&nbsp;   <img src='./images/diagonala11.png' alt='img'/></a>
           </div>
@@ -262,7 +262,7 @@ require_once('includes/header.php');
           <h1 class='EachHeadTxt'>Klasse 7<br> Vollintegriert Standard</h1>
           <h4>Z.B. Dethleffs Trend I7057 EB</h4>
           <p>Sitzplätze: 4</p>
-          <p>Schlafplätze: 5</p>
+          <p>Schlafplätze: 4</p>
           <p>Gewicht: 4250 kg - <b style="color: darkred;">Achtung "FS Kl.3/C/C1"</b></p><br>
           <a title='Details zu diesem Fahrzeug anzeigen' href='./Fahrzeug7.php' class='detailIdA'>Details &nbsp;&nbsp;   <img src='./images/diagonala11.png' alt='img'/></a>
           </div>   
@@ -271,7 +271,7 @@ require_once('includes/header.php');
           <a title='Fahrzeugnummer 8' href='./Fahrzeug8.php'><img style='border-bottom:5px solid #0293D1!important'  class='col4Img' src='./images08/eighth13.jpg' alt='img'/></a>
           <div class='txtAutoDiv'> 
           <h1 class='EachHeadTxt'>Klasse 8<br> Vollintegriert Luxus</h1>
-          <h4>Z.B. Dethleffs Magic Edition T2 EB</h4>
+          <h4>Z.B. Dethleffs Magic Edition I2 EB</h4>
           <p>Sitzplätze: 5</p>
           <p>Schlafplätze: 5</p>
           <p>Gewicht: 4250 kg - <b style="color: darkred;">Achtung "FS Kl.3/C/C1"</b></p><br>

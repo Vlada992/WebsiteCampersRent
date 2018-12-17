@@ -34,7 +34,7 @@ require_once('includes/header2.php');
                     </div>
                     <div class="ce_image autogrid-id_5651 autogrid-type_cte n0 one_half autogrid block">
                         <figure class="image_container img2Fig">
-                            <img src="files/data/gfx/fahrzeuge/symbole/personen5p1.jpg" width="800" height="296" alt="maximal 4 Personen"
+                            <img src="files/data/gfx/fahrzeuge/symbole/4_personen.jpg" width="800" height="296" alt="maximal 4 Personen"
                                 title="maximal 4 Personen">
                         </figure>
                     </div>
@@ -99,7 +99,7 @@ require_once('includes/header2.php');
                                     <td class="col_2 col22 colCent"> 294 cm </td>
                                     <td class="col_2 col22 colCent">4250 kg<br> (Zul. Gesamtmasse)</td>
                                     <td class="col_2 col22 colCent">4</td>
-                                    <td class="col_2 col33 colCent">5</td>
+                                    <td class="col_2 col33 colCent">4</td>
                                 </tr>
                             </tbody>
                         </table>

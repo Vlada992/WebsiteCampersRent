@@ -17,7 +17,7 @@
             </div>
             <div class="mod_article block" id="pg3-vollintegriertes-wohnmobil-eb">
                 <h2 class="ce_headline first" id="ueberschrift-fahrzeuge-pg3">
-                    Vollintegriert z.B. Dethleffs Trend T7057 EB</h2>
+                    Teilintegriert z.B. Dethleffs Trend T7057 EB</h2>
                 <div class="autogrid three_sixth block">
                     <div class="ce_image block imgBlock1">
                         <figure class="image_container">
@@ -30,14 +30,14 @@
 
                     <div class="ce_image autogrid-id_5650 autogrid-type_cte n0 one_half autogrid block">
                         <figure class="image_container img2Fig">
-                            <img src="files/data/gfx/fahrzeuge/symbole/vollintegriertes-wohnmobil.jpg" width="800"
-                                height="296" alt="Vollintegriertes Wohnmobil" title="Vollintegriertes Wohnmobil">
+                            <img src="files/data/gfx/fahrzeuge/symbole/teilintegriertes-wohnmobil.jpg" width="800"
+                                height="296" alt="Vollintegriertes Wohnmobil" title="Teilintegriert  Wohnmobil">
                         </figure>
                     </div>
                     <div class="ce_image autogrid-id_5651 autogrid-type_cte n0 one_half autogrid block">
                         <figure class="image_container img2Fig">
                             <img src="files/data/gfx/fahrzeuge/symbole/personen5p1.jpg" width="800" height="296" alt="maximal 4 Personen"
-                                title="maximal 4 Personen">
+                                title="maximal 5 Personen">
                         </figure>
                     </div>
                     <br style="clear:both" />

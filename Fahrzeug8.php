@@ -29,14 +29,14 @@ require_once('includes/header2.php');
                     </div>
                     <div class="ce_image autogrid-id_5650 autogrid-type_cte n0 one_half autogrid block">
                         <figure class="image_container img2Fig">
-                            <img src="files/data/gfx/fahrzeuge/symbole/teilintegriertes-wohnmobil.jpg" width="800"
+                            <img src="files/data/gfx/fahrzeuge/symbole/vollintegriertes-wohnmobil.jpg" width="800"
                                 height="296" alt="Vollintegriertes Wohnmobil" title="Vollintegriertes Wohnmobil">
                         </figure>
                     </div>
                     <div class="ce_image autogrid-id_5651 autogrid-type_cte n0 one_half autogrid block">
                         <figure class="image_container img2Fig">
                             <img src="files/data/gfx/fahrzeuge/symbole/personen5p1.jpg" width="800" height="296" alt="maximal 4 Personen"
-                                title="maximal 4 Personen">
+                                title="maximal 5 Personen">
                         </figure>
                     </div>
                     <br style="clear:both" />

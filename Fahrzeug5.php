@@ -29,14 +29,14 @@
                     </div>
                     <div class="ce_image autogrid-id_5650 autogrid-type_cte n0 one_half autogrid block">
                         <figure class="image_container img2Fig">
-                            <img src="files/data/gfx/fahrzeuge/symbole/vollintegriertes-wohnmobil.jpg" width="800"
-                                height="296" alt="Vollintegriertes Wohnmobil" title="Vollintegriertes Wohnmobil">
+                            <img src="files/data/gfx/fahrzeuge/symbole/teilintegriertes-wohnmobil.jpg" width="800"
+                                height="296" alt="Vollintegriertes Wohnmobil" title="Teilintegriert Wohnmobil">
                         </figure>
                     </div>
                     <div class="ce_image autogrid-id_5651 autogrid-type_cte n0 one_half autogrid block">
                         <figure class="image_container img2Fig">
                             <img src="files/data/gfx/fahrzeuge/symbole/3_personen.jpg" width="800" height="296" alt="maximal 4 Personen"
-                                title="maximal 4 Personen">
+                                title="maximal 3 Personen">
                         </figure>
                     </div>
                     <br style="clear:both" />

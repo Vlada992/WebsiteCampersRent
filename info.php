@@ -20,12 +20,13 @@ require_once('includes/header2.php');
         </div>
         <div class="row container" style="margin-top: 30px; margin-left: auto; margin-right: auto;">
             <div class="col-lg-12" style="margin:auto !important;">
+                <p style=" padding-top: 30px; text-align: justify;">
+                    Als Highlight für die Saison 2019 statten wir einen Großteil unserer Wohnmobile mit einem Automatikgetriebe und einer Wohnraumklimaanlage aus! Die Wohnmobile sind (je nach Modell) wie folgt ausgestattet:
+                </p><br>
                 <img src="images/slika1.jpg" class="img-fluid rounded" style="display: block; margin: auto !important;">
             </div>
             <div class="col-lg-12">
-                <p style=" padding-top: 30px;">
-                    Als Highlight für die Saison 2019 statten wir einen Großteil unserer Wohnmobile mit einem Automatikgetriebe und einer Wohnraumklimaanlage aus! Die Wohnmobile sind (je nach Modell) wie folgt ausgestattet:
-                </p>
+                <br><br>
             </div>
         </div>
             <div class='modalulLi container' style="padding-bottom: 0px; margin-top: 0px;">
@@ -76,16 +77,16 @@ require_once('includes/header2.php');
             </div>
             <div class="col-lg-12" style="float: left; clear: both; padding-top: 30px;">
                 <h4>Auslandsfahrten</h4>
-                <p>Grundsätzlich sind Auslandsfahrten in alle europäischen Länder möglich. Das Wohnmobil steht für Fahrten außerhalb Europas und in einige Länder der ehemaligen UDSSR nicht zur Verfügung. Fahrten in Kriegs- und Krisengebiete sind nicht erlaubt.</p>
+                <p>Grundsätzlich sind Auslandsfahrten in alle europäischen Länder möglich (siehe AGBs). Das Wohnmobil steht für Fahrten außerhalb Europas und in einige Länder der ehemaligen UDSSR nicht zur Verfügung. Fahrten in Kriegs- und Krisengebiete sind nicht erlaubt.</p>
 
                 <h4>Fahrzeugführer</h4>
                 <p>Einige Wohnmobile haben ein zulässiges Gesamtgewicht von über 3,5t. Hier ist der Führerschein Klasse 3 (alt) oder der Führerschein C/C1 (neu) erforderlich. Das Mindestalter bei den Fahrzeugen der Klassen 1-4 beträgt 21 Jahre, in der Klassen 4-8 beträgt es 25 Jahre. Der Fahrer muss seit mindestens 24 Monaten im Besitz der entsprechenden Fahrerlaubnis sein.</p>
 
                 <h4>Kaution</h4>
-                <p>Bei Übergabe des Wohnmobils ist in den Klassen 1-4 eine Kaution in Höhe von … € zu hinterlegen. In den Klassen 4-8 beträgt die Kaution …€. Ist das Wohnmobil bei Rückgabe in dem Zustand wie bei Übergabe, so wird die Kaution sofort in voller Höhe an den Mieter erstattet. Der Abschluss einer Kautionsversicherung zur Reduzierung des Selbstbehaltes ist möglich.</p>
+                <p>Bei Übergabe des Wohnmobils ist in den Klassen 1-2 eine Kaution in Höhe von 1000€ zu hinterlegen. In den Klassen 3-8 beträgt die Kaution 1500€. Ist das Wohnmobil bei Rückgabe in dem Zustand wie bei Übergabe, so wird die Kaution in voller Höhe an den Mieter erstattet. Der Abschluss einer Kautionsversicherung zur Reduzierung des Selbstbehaltes ist möglich.</p>
 
                 <h4>Mietpreise</h4>
-                <p>In den Mietpreisen sind bereits eingeschlossen: Gesetzlich vorgeschriebene Mehrwertsteuer Haftpflichtversicherung mit unbegrenzter Deckung Vollkaskoversicherung (…€ / … € Selbstbeteiligung) Teilkaskoversicherung (… € / … € Selbstbeteiligung)</p>
+                <p>In den Mietpreisen sind bereits eingeschlossen: Gesetzlich vorgeschriebene Mehrwertsteuer Haftpflichtversicherung mit unbegrenzter Deckung Vollkaskoversicherung (1000€/1500€ Selbstbeteiligung) Teilkaskoversicherung (1000€/1500€ Selbstbeteiligung).</p>
 
                 <h4>Reinigung</h4>
                 <p>Die Wohnmobile werden in gereinigtem Zustand an den Mieter übergeben und sind gereinigt wieder zurückzugeben. Ist die Reinigung bei Fahrzeugrückgabe durch den Mieter ganz oder teilweise nicht erfolgt, werden die Kosten laut Mietvertrag in Rechnung gestellt.</p>
