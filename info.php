@@ -21,12 +21,12 @@ require_once('includes/header2.php');
         <div class="row container" style="margin-top: 30px; margin-left: auto; margin-right: auto;">
             <div class="col-lg-12" style="margin:auto !important;">
                 <p style=" padding-top: 30px; text-align: justify;">
-                    Als Highlight für die Saison 2019 statten wir einen Großteil unserer Wohnmobile mit einem Automatikgetriebe und einer Wohnraumklimaanlage aus! Die Wohnmobile sind (je nach Modell) wie folgt ausgestattet:
+                    Als Highlight für die Saison 2019 statten wir einen Großteil unserer Wohnmobile mit einem Automatikgetriebe und einer Wohnraumklimaanlage aus! 
                 </p><br>
                 <img src="images/slika1.jpg" class="img-fluid rounded" style="display: block; margin: auto !important;">
             </div>
-            <div class="col-lg-12">
-                <br><br>
+            <div class="col-lg-12"><br>
+                <p>Die Wohnmobile sind (je nach Modell) wie folgt ausgestattet:</p>
             </div>
         </div>
             <div class='modalulLi container' style="padding-bottom: 0px; margin-top: 0px;">
