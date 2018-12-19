@@ -141,7 +141,7 @@ echo "</select>";
 
 
 <input type="hidden" id="token" name="token" value="<?php if(isset($token)) echo $token ?>"><br>
-<p>Formateingabe mit TT/MM/YYYY oder Datum anklicken:</p>
+<p>Formateingabe mit TT.MM.JJJJ oder Datum anklicken:</p>
 </fieldset> <!-- fieldset -->
 </div> <!--div fieldset end -->
 
