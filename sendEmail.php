@@ -24,6 +24,7 @@ $token = strip_tags($token);
 
 $dateStartStr = $dateStart;
 $dateEndStr = $dateEnd;
+
 if((isset($token) && isset($_SESSION['token']) && $token == $_SESSION['token']) == false){
 echo "<p>Problem mit dem Token.</p>"; /*Problem with the token. */
 $errors ++;
@@ -34,11 +35,17 @@ echo "<p>Email ist ungültig.</p>"; /*Email is not valid.*/
 $errors ++;
 }
 
-$pattern = "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/";
+$pattern = "/^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$/";
 if((preg_match($pattern, $dateStart) == 0) || (preg_match($pattern, $dateEnd) == 0)){
- echo "Datumsangaben müssen im richtigen Format (JJJJ-MM-TT) vorliegen.</pp>"; /*Dates must be in the proper format (yyyy-mm-dd).*/ 
+ echo "Datumsangaben müssen im richtigen Format (TT.MM.JJJJ) vorliegen.</p>"; /*Dates must be in the proper format (ydd/mm/yyyy).*/ 
 $errors ++;
+die();
 }
+
+$dateStart = explode(".", $dateStart);
+$dateStart = $dateStart[2] . "-" . $dateStart[1] . "-" . $dateStart[0];
+$dateEnd = explode(".", $dateEnd);
+$dateEnd = $dateEnd[2] . "-" . $dateEnd[1] . "-" . $dateEnd[0];
 
 $currDate = new DateTime();
 $currDate = $currDate->format("Y-m-d");
@@ -67,12 +74,13 @@ $mail->addReplyTo($email, $firstName . " " . $lastName);
 $mail->SetFrom = "reservation@fernweh-wohnmobilvermietung.de";//site address
 $mail->FromName = "Wohnmobile";
 
-$mail->addAddress("info@fernweh-wohnmobilvermietung.de", "Fernweh");//admin address SEND TO 
+$mail->addAddress("lukickld@gmail.com", "Fernweh");//admin address SEND TO 
 //$mail->addCC("name@example.com", "Name Surname");
 $mail->isHTML(true);
 
 $mail->Subject = "Reservierung auf Ihrer Website"; /*Reservation on your website*/
 /*A client made an reservation on your website with the following data:*/
+
 $mail->Body = "<p>Ein Kunde hat auf Ihrer Website eine Reservierung mit folgenden Daten vorgenommen:</p> 
 <h2>Kundendaten</h2>
 <p>Vorname: $firstName</p>
@@ -81,8 +89,8 @@ $mail->Body = "<p>Ein Kunde hat auf Ihrer Website eine Reservierung mit folgende
 <p>Telefon: $phone</p>
 <h2>Reservierungsdaten</h2>
 <p>Fahrzeug: $vehicle</p>
-<p>Anfangsdatum " . date("F d, Y", strtotime($dateStartStr)) . "</p>
-<p>Endtermin " . date("F d, Y", strtotime($dateEndStr)) . "</p>
+<p>Anfangsdatum " . $dateStartStr . "</p>
+<p>Endtermin " . $dateEndStr . "</p>
 <p><a href=\"". Config::get("url") . "admin/insertReservation.php?vehicleId=$vehicleId&dateStart=$dateStartStr&dateEnd=$dateEndStr&firstName=$firstName&lastName=$lastName&email=$email&phone=$phone\">Insert reservation</a></p>
 <p><a href=\"tel:$phone\">Client anrufen</a></p>";
 //$mail->AltBody = $body;
@@ -103,6 +111,6 @@ if($errors == 0){
 if(!$mail->send()){
 echo "<p>Reservierung nicht erfolgreich. Benachrichtigungs-E-Mail wurde nicht an den Administrator gesendet. Versuchen Sie es nochmal.</p>";
 }else{
-echo "<p>Eine Nachricht wird an uns weitergeleitet. Wir setzen uns kurzfristig mit Ihnen in Verbindung.</p>";
+echo "<p>Eine E-Mail wird an den Administrator gesendet. Er wird Ihre Reservierung bestätigen und Sie darüber informieren.</p>";
 }//end else, end of php mailer
 }// end no errors

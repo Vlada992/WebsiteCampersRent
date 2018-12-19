@@ -22,6 +22,11 @@ $vehicleId = strip_tags($vehicleId);
 $dateStart = strip_tags($dateStart);
 $dateEnd = strip_tags($dateEnd);
 
+$dateStart = explode(".", $dateStart);
+$dateStart = $dateStart[2] . "-" . $dateStart[1] . "-" . $dateStart[0];
+$dateEnd = explode(".", $dateEnd);
+$dateEnd = $dateEnd[2] . "-" . $dateEnd[1] . "-" . $dateEnd[0];
+
 $dateStart = date("Y-m-d", strtotime($dateStart));
 $dateEnd = date("Y-m-d", strtotime($dateEnd));
 
