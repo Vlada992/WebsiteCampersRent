@@ -50,12 +50,12 @@ $userId = strip_tags($userId);
             <a id='indId1' class="navbar-brand rounded" href="../index.php"><img id='stajlLogo1' style='display:none;width:205px;height:70px' src='../images/menuMenuLogo1.png' alt="Fernweh" />
                 <img style='width:205px;height:70px' id='stajlLogo' src='../images/logo_menu.png' class="rounded" alt="Fernweh"></a>
                 <!--logo text-->
-                <h6 class='logoTxt'>
+                <!-- <h6 class='logoTxt'>
                     <img style='margin-top:-2%;' src='../images/old-typical-phoneLogo1.png' alt="Fernweh"/>
                     <a style='color:#999999!important' href='tel:4915158166222'>+49 151 58166222</a><br><br>
                     <img style='margin-top:-2%;' src='../images/openedMailLogo1.png' alt="Fernweh" />
                     &nbsp;&nbsp;<a style='color:#999999!important' href="mailto:info@fernweh-wohnmobil.de">info@fernweh-wohnmobil.de</a>
-                </h6>
+                </h6> -->
                 <!--logo text-->
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
