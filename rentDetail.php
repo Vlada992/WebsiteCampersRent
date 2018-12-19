@@ -23,7 +23,7 @@ require_once('includes/header2.php');
         <div class='container'>
             <div class='row'>
                 <div class='col-lg-12'>
-                    <h2 id='rentHead' style="text-align:center; margin-top: 100px;">Vermietung<br>Reservierungsanfrage</h2><br>
+                    <h1 id='rentHead' style="text-align:center; margin-top: 100px;">Vermietung<br>Reservierungsanfrage</h1><br>
                 </div>
             </div>
         </div>
@@ -141,7 +141,7 @@ echo "</select>";
 
 
 <input type="hidden" id="token" name="token" value="<?php if(isset($token)) echo $token ?>"><br>
-<p>Formateingabe mit JJJJ-MM-TT oder Datum anklicken:</p>
+<p>Formateingabe mit TT/MM/YYYY oder Datum anklicken:</p>
 </fieldset> <!-- fieldset -->
 </div> <!--div fieldset end -->
 
@@ -167,8 +167,8 @@ echo "</select>";
 
 
 <script>
-$( "#startDate" ).multiDatesPicker({dateFormat: "yy-mm-dd"});
-$( "#endDate" ).multiDatesPicker({dateFormat: "yy-mm-dd"});
+$( "#startDate" ).multiDatesPicker({dateFormat: "dd.mm.yy"});
+$( "#endDate" ).multiDatesPicker({dateFormat: "dd.mm.yy"});
 
 $("#submit").click(function(e){
 e.preventDefault();
@@ -195,17 +195,26 @@ if(emailRegEx.test(email) == false)
   answer += "<p>Email ist ungültig.</p>";
 }
 
-var dateRegEx = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/
+var dateRegEx = /^([0-9]{2})\.([0-9]{2})\.([0-9]{4})$/
 
 if(dateStart != ""){
 if(dateRegEx.test(dateStart) == false)
-  answer += "<p>Das Startdatum muss in der richtigen Form sein (JJJJ-MM-TT).</p>";
+  answer += "<p>Das Startdatum muss in der richtigen Form sein (TT.MM.JJJJ).</p>";
 }
 
 if(dateEnd != ""){
 if(dateRegEx.test(dateEnd) == false)
-  answer += "<p>Das Enddatum muss in der richtigen Form sein (JJJJ-MM-TT).</p>";
+  answer += "<p>Das Enddatum muss in der richtigen Form sein (TT.MM.JJJJ).</p>";
 }
+
+var dateStartStr = dateStart;
+var dateEndStr = dateEnd;
+
+dateStart = dateStart.split(".");
+dateStart = dateStart[2] + "-" + dateStart[1] + "-" + dateStart[0];
+
+dateEnd = dateEnd.split(".");
+dateEnd = dateEnd[2] + "-" + dateEnd[1] + "-" + dateEnd[0];
 
 var today = new Date();
 today.setHours(0,0,0,0);
@@ -226,7 +235,7 @@ answer += "<p>Enddatum kann nicht in der Vergangenheit liegen.</p>";
 
 if((dateStart != "") && (dateEnd != "")){
 if(eDate < sDate)
-answer += "<p>Das Enddatum kann nicht vor dem Startdatum liegen.</pp>";
+answer += "<p>Das Enddatum kann nicht vor dem Startdatum liegen.</p>";
 }
 
 if(answer != ""){
@@ -235,7 +244,7 @@ document.getElementById("successMess").innerHTML = answer;
 $.ajax({
 type: "POST",
 url: "sendEmail.php",
-data: "firstName=" + fName + "&lastName=" + lName + "&email=" + email + "&phone=" + phone + "&vehicle=" + vehicle + "&dateStart=" + dateStart + "&dateEnd=" + dateEnd + "&token=" + token,
+data: "firstName=" + fName + "&lastName=" + lName + "&email=" + email + "&phone=" + phone + "&vehicle=" + vehicle + "&dateStart=" + dateStartStr + "&dateEnd=" + dateEndStr + "&token=" + token,
 dataType: "text",
 success: callback
 });

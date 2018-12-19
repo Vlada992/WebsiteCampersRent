@@ -10,11 +10,16 @@ $dateStart = strip_tags($dateStart);
 $dateEnd = strip_tags($dateEnd);
 $vehicle = strip_tags($vehicle);
 
-$pattern = "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/";
+$pattern = "/^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$/";
 if((preg_match($pattern, $dateStart) == 0) || (preg_match($pattern, $dateEnd) == 0)){
 echo "Datumsangaben müssen im richtigen Format (JJJJ-MM-TT) vorliegen.\r\n";
 die();
 }
+
+$dateStart = explode(".", $dateStart);
+$dateStart = $dateStart[2] . "-" . $dateStart[1] . "-" . $dateStart[0];
+$dateEnd = explode(".", $dateEnd);
+$dateEnd = $dateEnd[2] . "-" . $dateEnd[1] . "-" . $dateEnd[0];
 
 $currDate = new DateTime();
 $currDate = $currDate->format("Y-m-d");
@@ -37,9 +42,9 @@ die();
 static $message = "";
 while($dateStart <= $dateEnd){
 if(checkDateStart(date("Y-m-d", $dateStart), $vehicleId))
-$message .= date("Y-m-d", $dateStart). " - Dieses Datum ist voll.\r\n";
+$message .= date("d.m.Y", $dateStart). " - Dieses Datum ist voll.\r\n";
 else
-$message .= date("Y-m-d", $dateStart) . " - Dieser Termin ist frei.\r\n";
+$message .= date("d.m.Y", $dateStart) . " - Dieser Termin ist frei.\r\n";
 
 $dateStart = strtotime("+1 day", $dateStart);
 }//end while
