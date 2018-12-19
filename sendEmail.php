@@ -74,7 +74,7 @@ $mail->addReplyTo($email, $firstName . " " . $lastName);
 $mail->SetFrom = "reservation@fernweh-wohnmobilvermietung.de";//site address
 $mail->FromName = "Wohnmobile";
 
-$mail->addAddress("lukickld@gmail.com", "Fernweh");//admin address SEND TO 
+$mail->addAddress("info@fernweh-wohnmobilvermietung.de", "Fernweh");//admin address SEND TO 
 //$mail->addCC("name@example.com", "Name Surname");
 $mail->isHTML(true);
 
