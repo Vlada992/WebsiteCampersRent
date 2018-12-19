@@ -111,6 +111,6 @@ if($errors == 0){
 if(!$mail->send()){
 echo "<p>Reservierung nicht erfolgreich. Benachrichtigungs-E-Mail wurde nicht an den Administrator gesendet. Versuchen Sie es nochmal.</p>";
 }else{
-echo "<p>Eine E-Mail wird an den Administrator gesendet. Er wird Ihre Reservierung bestätigen und Sie darüber informieren.</p>";
+echo "<p>Eine Nachricht wird an uns weitergeleitet. Wir setzen uns kurzfristig mit Ihnen in Verbindung.</p>";
 }//end else, end of php mailer
 }// end no errors
