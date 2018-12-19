@@ -24,6 +24,11 @@ $dateStart = strip_tags($dateStart);
 $dateEnd = strip_tags($dateEnd);
 $reservation_id = strip_tags($reservation_id);
 
+$dateStart = explode(".", $dateStart);
+$dateStart = $dateStart[2] . "-" . $dateStart[1] . "-" . $dateStart[0];
+$dateEnd = explode(".", $dateEnd);
+$dateEnd = $dateEnd[2] . "-" . $dateEnd[1] . "-" . $dateEnd[0];
+
 if(!filter_var($email, FILTER_VALIDATE_EMAIL))
 $errors[] = "Email ist ungültig.";
 

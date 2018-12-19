@@ -161,11 +161,11 @@ echo "</select>";
 ?>
 <br>
 <label for="startDate">Anfangsdatum:</label><br>
-<input type="text" name="dateStart" id="startDate" class="date" value="<?php if(isset($reservation->date_start)) echo $reservation->date_start ?>" required><br>
+<input type="text" name="dateStart" id="startDate" class="date" value="<?php if(isset($reservation->date_start)) echo date('d.m.Y', strtotime($reservation->date_start)) ?>" required><br>
 <label for="endDate">Endtermin:</label><br>
-<input type="text" name="dateEnd" id="endDate" class="date" value="<?php if(isset($reservation->date_end)) echo $reservation->date_end ?>" required>
+<input type="text" name="dateEnd" id="endDate" class="date" value="<?php if(isset($reservation->date_end)) echo date('d.m.Y', strtotime($reservation->date_end)) ?>" required>
 <input type="hidden" name="reservation_id" value="<?php echo $reservation->reservation_id ?>"><br>
-<p>(Der Benutzer kann das Datum manuell im Format eingeben: JJJJ-MM-TT oder das Feld eingeben und auf das gewünschte Datum klicken)</p>
+<p>(Der Benutzer kann das Datum manuell im Format eingeben: TT.MM.JJJJ oder das Feld eingeben und auf das gewünschte Datum klicken)</p>
 
 <p>Klicken Sie <span id="checkingDates" onclick="checkingDates()">hier</span> um zu sehen, ob die ausgewählten Daten für das ausgewählte Fahrzeug frei sind</p>
 
@@ -175,8 +175,8 @@ echo "</select>";
 
 
 <script>
-$( "#startDate" ).multiDatesPicker({dateFormat: "yy-mm-dd"});
-$( "#endDate" ).multiDatesPicker({dateFormat: "yy-mm-dd"});
+$( "#startDate" ).multiDatesPicker({dateFormat: "dd.mm.yy"});
+$( "#endDate" ).multiDatesPicker({dateFormat: "dd.mm.yy"});
 </script>
 
 
