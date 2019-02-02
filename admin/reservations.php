@@ -95,9 +95,9 @@ $vehicles = allVehicles();
                 <!-- Početak Nebojšinog koda -->
             <div class='adminIndclass' style='background-color:hsl(0,0%,88%)' id="logout">
                 <?php
-                if(isset($_SESSION['user_id'], $_SESSION['userName'])){
-                echo "<br><h3 style='font-size:2rem;padding:3%; display:inline;' class='adminH3'>Hallo " . $_SESSION['userName'] . "!</h3>";
-                ?>
+                if (isset($_SESSION['user_id'], $_SESSION['userName'])) {
+                    echo "<br><h3 style='font-size:2rem;padding:3%; display:inline;' class='adminH3'>Hallo " . $_SESSION['userName'] . "!</h3>";
+                    ?>
                 <form class='pull-right btn btn-danger' action="logout.php" method="post" style="margin: 3%;">
                     <input  class='btn btn-danger'  type="submit" name="logout" value="Ausloggen">
                 </form>
@@ -105,26 +105,27 @@ $vehicles = allVehicles();
 
                 </div> <!-- col-md-4 -->
                 <?php
-                }
-                ?>
+
+            }
+            ?>
             </div>
 <?php
-if(isset($_SESSION['user_id'])){
-?>
+if (isset($_SESSION['user_id'])) {
+    ?>
 
 <h2 class='adminH3' style='margin-top:4%;margin-bottom:0%'>Manage reservations</h2><br>
  <button style='margin-bottom:4%;max-width:100%;padding:1%!important' class='btn btn-success btn-lg'><a style='text-decoration:none;color:#fff;font-size:30px' href="insertReservation.php">Reservierung einfügen</a></button><br>
 <!-- početak novog koda -->
 <?php
-if(isset($vehicles)){
-echo "<form   id=\"reservationForm\" class=\"btn btn-lg btn-block\">";
-echo "<select onchange='busyPeriods(this)'>";
-echo "<option  value=\"\">&nbsp;&nbsp;Wählen&nbsp;&nbsp;</option>";
-foreach($vehicles as $vehicle){
-echo "<option value=\"$vehicle->vehicle_id\">$vehicle->vehicle</option>";
-}
-echo "</select>";
-echo "</form>";
+if (isset($vehicles)) {
+    echo "<form   id=\"reservationForm\" class=\"btn btn-lg btn-block\">";
+    echo "<select onchange='busyPeriods(this)'>";
+    echo "<option  value=\"\">&nbsp;&nbsp;Wählen&nbsp;&nbsp;</option>";
+    foreach ($vehicles as $vehicle) {
+        echo "<option value=\"$vehicle->vehicle_id\">$vehicle->vehicle</option>";
+    }
+    echo "</select>";
+    echo "</form>";
 }
 ?>
 <div id="busyPeriods">
@@ -134,56 +135,18 @@ echo "</form>";
 <script>
 var question = "Sind Sie sicher, dass Sie diese Reservierung löschen möchten?";
 </script>
-<!--
-<div class="table-responsive">          
-<table style='background-color:hsl(0,0%,85%)'  class="table table-hover">
-<thead>
-<tr style='background-color:hsl(0,0%,65%)'>
-<th>Num</th>
-<th>Fahrzeug</th>
-<th>Anfangsdatum</th>
-<th>Endtermin</th>
-<th>Klient</th>
-<th>E-mail</th>
-<th>Telefon</th>
-<th>aktualisieren</th>
-<th>löschen</th>                       
-</tr>
-</tbody>                   
--->
-<!-- test test test NEW NEW NEW TABLE NEW TABLE-->
-
 
 <?php
-/*
-if(isset($allReservations)){
-static $num = 0;
-foreach($allReservations as $reservation){
-echo "<tr>";
-echo "<td>" . ++$num . "</td>";
-echo "<td>" . $reservation->vehicle . "</td>";
-echo "<td>" . date('F d, Y', strtotime($reservation->date_start)) . "</td>";
-echo "<td>" . date('F d, Y', strtotime($reservation->date_end)) . "</td>";
-echo "<td>" . $reservation->first_name . " " . $reservation->last_name . "</td>";
-echo "<td>" . $reservation->email . "</td>";
-echo "<td>" . $reservation->phone . "</td>";
-echo "<td><a href=\"updateReservation.php?id=$reservation->reservation_id\">Aktualisieren</a></td>";
-echo "<td><a href=\"deleteReservation.php?id=$reservation->reservation_id\" onclick=\"return confirm(question);\">Döschen</a></td>";
-}
-}
-*/
+
 ?>
-<!--
-</table>
-</div>
--->
+
 </div>
 </div> <!-- container -->
-<!--</table--> <!-- end of old table-->
 
 <?php
-}else{
-include_once "inc/widgets/loginForm.php";
+
+} else {
+    include_once "inc/widgets/loginForm.php";
 }
 ?>
                 <!-- kraj Nebojšinog koda -->
@@ -208,17 +171,16 @@ include_once "inc/widgets/loginForm.php";
 <?php 
 require_once('../includes/footer1.php');
 require_once('../includes/modal4.php');
-
 ?>
 
 
     <!--  ovo dole sam ostavio ako zatreba slucajno lako cemo da izbrisemo -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src='../main.js'></script>

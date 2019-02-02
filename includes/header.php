@@ -7,16 +7,14 @@
       <img style='width:205px!important;height:70px!important' id='stajlLogo' src='./images/menuMenuLogo1.png' class="rounded" alt='img'>
       <!--logo text--><br>
       </a>
-      <h6 style="color: black !important;">
 
-        <img style='margin-top:-2%;' src='./images/old-typical-phoneLogo1.png' />
-        <a style='color:black!important' href='tel:+49 151 55778431'>+49 151 55778431</a><br>
-        <img style='margin-top:-2%;' src='./images/openedMailLogo1.png' />
+<h6 style="color: black !important;">
+        <img style='vertical-align:baseline' src='./images/old-typical-phoneLogo1.png' />
+        <a style='color:black!important;line-height:2' href='tel:+4915155778431'>+49 151 55778431</a><br>
+        <img style='vertical-align:baseline' src='./images/openedMailLogo1.png'/>
         &nbsp;&nbsp;<a style='color:black!important' href="mailto:info@fernweh-wohnmobilvermietung.de">info@fernweh-wohnmobilvermietung.de</a>
-
-      </h6>
-      <!--logo text-->
-    
+</h6>
+  <!--logo text-->
   <!-- -->
 
 

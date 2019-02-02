@@ -924,9 +924,6 @@ footer p {
 
 
 @media screen and (max-width: 770px) {
-    main {
-        /*margin-top: 40%*/
-    }
     #btnAuss {
         width: auto !important
     }
@@ -2126,7 +2123,9 @@ eachHeadTxt {
 .table-responsive {
     border:none!important;
 }
-tbody tr:nth-child(-n + 3):hover {
+
+/*it was (-n + 3  */
+tbody tr:nth-child(n ):hover {
     background-color:gray!important
 }
 
@@ -2134,7 +2133,6 @@ tbody tr:nth-child(-n + 3):hover {
     .vagDet extraServD h2 {font-size:2rem; }
     .vagDet h2 > img { width:30px; height:30px; }
     .list-group-item{font-size:13px}
-
   }
 
 
@@ -2146,8 +2144,6 @@ tbody tr:nth-child(-n + 3):hover {
     opacity: 0.6;
     left:20%;
 }
-
-
 
 .logoTxt:hover {
 opacity:1;
@@ -2537,3 +2533,4 @@ opacity:1;
     outline:none!important;
  }
 
+ 

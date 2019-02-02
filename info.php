@@ -13,22 +13,25 @@ require_once('includes/header2.php');
     
     <div class="container-fluid" style="font-size: 18px; font-family: 'Arial';">
         <div style="text-align: center;">
-            <h1 style="margin-top: 180px;">INFORMATIONEN</h1>
+            <h1 style="margin-top: 180px">INFORMATIONEN</h1>
         </div>
+
         <div style="padding-top: 50px;" class="container">
             <h3 class="text-center">AUSSTATTUNG</h3>
         </div>
-        <div class="row container" style="margin-top: 30px; margin-left: auto; margin-right: auto;">
+
+        <div class="container" style="margin-top: 30px; margin-left: auto; margin-right: auto;">
             <div class="col-lg-12" style="margin:auto !important;">
                 <p style=" padding-top: 30px; text-align: justify;">
                     Als Highlight für die Saison 2019 statten wir einen Großteil unserer Wohnmobile mit einem Automatikgetriebe und einer Wohnraumklimaanlage aus! 
                 </p><br>
                 <img src="images/slika1.jpg" class="img-fluid rounded" style="display: block; margin: auto !important;">
-            </div>
+            </div> <!-- col-lg-12 -->
             <div class="col-lg-12"><br>
                 <p>Die Wohnmobile sind (je nach Modell) wie folgt ausgestattet:</p>
-            </div>
+            </div> <!-- col-lg-12 -->
         </div>
+
             <div class='modalulLi container' style="padding-bottom: 0px; margin-top: 0px;">
                 <ul class='ullistClass'>
                 <li>ABS</li>

@@ -12,7 +12,7 @@
                 <!--<p class='contCls'><i class="fa fa-location-arrow"></i>&nbsp;Gosberger Strasse</p>-->
                 <p class='contCls'> <img class='contCls' src='./images/street2.png'/>&nbsp;Gosberger Straße 27</p>
                 <p class='contCls'><img class='contCls' src='./images/homeAddress1.png'/>&nbsp;91361 Gosberg</p>
-                <p class='contCls'>&nbsp;<i class="fa fa-phone"></i>&nbsp;<a style='color:#0293D1!important' href='tel:+49 151 55778431'>+49 151 55778431</a></p>
+                <p class='contCls'>&nbsp;<i class="fa fa-phone"></i>&nbsp;<a style='color:#0293D1!important' href='tel:+4915155778431'>+49 151 55778431</a></p>
                 <p class='contCls'>&nbsp;<i class="fa fa fa-envelope"></i>&nbsp; <a href="mailto:info@fernweh-wohnmobilvermietung.de" style="color: #0293D1;"> info@fernweh-wohnmobilvermietung.de</a></p>
                 <p class='contCls'>&nbsp;<i class="fa fa fa-info-circle"></i>&nbsp; <a href="./impressum.php" style="color: black;"> Impressum</a></p>
                 <p class='contCls'>&nbsp;<i class="fa fa fa-database"></i>&nbsp; <a href="./daten.php" style="color: black;"> Datenschutzerklärung</a></p>

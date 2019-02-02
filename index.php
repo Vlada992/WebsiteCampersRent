@@ -8,8 +8,7 @@ require_once('includes/header.php');
 
 
 
-  <main id='startseite1'>
-    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+     <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     <div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
        <a id="button3"></a> 
 

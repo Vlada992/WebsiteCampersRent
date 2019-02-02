@@ -8,8 +8,8 @@
     </a>
       <h6 style="color: black !important;">
 
-        <img style='margin-top:-2%;' src='../images/old-typical-phoneLogo1.png' />
-        <a style='color:black!important' href='tel:+49 151 55778431'>+49 151 55778431</a><br>
+        <img style='vertical-align:baseline' src='../images/old-typical-phoneLogo1.png' />
+        <a style='vertical-align:baseline' href='tel:+4915155778431'>+49 151 55778431</a><br>
         <img style='margin-top:-2%;' src='../images/openedMailLogo1.png' />
         &nbsp;&nbsp;<a style='color:black!important' href="mailto:info@fernweh-wohnmobilvermietung.de">info@fernweh-wohnmobilvermietung.de</a>
 
@@ -17,7 +17,6 @@
       <!--logo text-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
       aria-expanded="false" aria-label="Toggle navigation">
-      <!-- <span class="navbar-toggler-icon"></span> -->
       <i style='color:#0293D1' class="fa fa-navicon"></i>
     </button>
  

@@ -26,8 +26,8 @@ echo "<td style='padding:1%;border-right:1px solid hsl(0,0%,71%);word-wrap:break
 echo "<td style='padding:1%;border-right:1px solid hsl(0,0%,71%);word-wrap:break-word;width:215px;'>&nbsp;&nbsp;" . $period->phone . "</td>";
 echo "<td style='padding:1%;border-right:1px solid hsl(0,0%,71%);word-wrap:break-word;width:215px;'>&nbsp;&nbsp;" . $period->vehicle . "</td>";
 echo "<td style='padding:1%;border-right:1px solid hsl(0,0%,71%);word-wrap:break-word;width:215px;'>&nbsp;&nbsp;" . date("d.m.Y", strtotime($period->date_start)) . "</td>";
-echo "<td style='padding:1%;border-right:1px solid hsl(0,0% 71%);word-wrap:break-word;width:215px;'>&nbsp;&nbsp;" . date("d.m.Y", strtotime($period->date_end)) . "</td>";
-echo "<td style='padding:1%;border-right:1px solid hsl(0,0%,71%);word-wrap:break-word;width:215px;'>&nbsp;&nbsp;<a href=\"updateReservation.php?id=$period->reservation_id\">Aktualisieren</a> </td>";
+echo "<td style='padding:1%;border-right:1px solid hsl(0,0%,71%);word-wrap:break-word;width:215px;'>&nbsp;&nbsp;" . date("d.m.Y", strtotime($period->date_end)) . "</td>";
+echo "<td style='padding:1%;border-right:1px solid hsl(0,0%,71%);word-wrap:break-word;width:215px;'>&nbsp;&nbsp;<a href=\"updateReservation.php?id=$period->reservation_id\"> Aktualisieren</a> </td>";
 echo "<td style='padding:1%;border-right:1px solid hsl(0,0%,71%);word-wrap:break-word;width:215px;'>&nbsp;&nbsp;<a href=\"deleteReservation.php?id=$period->reservation_id\" onclick=\"return confirm(question);\">Döschen</a> </td>";
 echo "</tr>";
 }
